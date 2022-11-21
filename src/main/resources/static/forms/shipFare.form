@@ -1,0 +1,23 @@
+{
+  "components": [
+    {
+      "label": "Ship Fare",
+      "type": "textfield",
+      "id": "Field_1bmkkzv",
+      "key": "fare",
+      "description": "Ship booking payment",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "shipFare",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.4.1"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.18.0",
+  "schemaVersion": 5
+}

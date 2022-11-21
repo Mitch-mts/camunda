@@ -1,0 +1,20 @@
+{
+  "components": [
+    {
+      "label": "username",
+      "type": "textfield",
+      "id": "Field_1i3tbxa",
+      "key": "name",
+      "description": "username"
+    }
+  ],
+  "type": "default",
+  "id": "userForm",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.4.1"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.18.0",
+  "schemaVersion": 5
+}

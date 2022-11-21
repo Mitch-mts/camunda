@@ -1,0 +1,33 @@
+{
+  "components": [
+    {
+      "label": "Name of Deceased",
+      "type": "textfield",
+      "id": "Field_1hlr3kp",
+      "key": "person_name",
+      "description": "The person who has passed away",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Funeral Cover Plan",
+      "type": "textfield",
+      "id": "Field_1c7ie7j",
+      "key": "funeral_policy",
+      "description": "Company to cover funeral process",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "funeralDetails",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.4.1"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.18.0",
+  "schemaVersion": 5
+}

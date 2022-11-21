@@ -1,0 +1,33 @@
+spring.datasource.url: jdbc:h2:file:./camunda-h2-database
+camunda.bpm.admin-user:
+  id: bigmitch
+  password: passw0rd123
+
+server:
+  port: 8059
+camunda:
+  bpm:
+    deployment-resource-pattern:
+      - classpath*:**/*.bpmn
+      - classpath*:**/*.bpmn20.xml
+      - classpath*:**/*.dmn
+      - classpath*:**/*.dmn11.xml
+      - classpath*:**/*.form
+
+# Discovery Server Access
+eureka:
+  instance:
+    preferIpAddress: true
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka
+    healthcheck:
+      enabled: false
+spring:
+  application:
+    name: camunda-service
