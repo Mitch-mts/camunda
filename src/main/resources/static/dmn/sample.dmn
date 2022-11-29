@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0w6f8wl" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.4.1" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.18.0">
+  <decision id="Decision_1xexz6a" name="Sample">
+    <decisionTable id="DecisionTable_0b0upjl" hitPolicy="FIRST">
+      <input id="Input_1" label="DayInput">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0zwf89s" label="HeadCountInput">
+        <inputExpression id="LiteralExpression_0wzn7cy" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Activity" typeRef="string" />
+      <rule id="DecisionRule_1373a1h">
+        <inputEntry id="UnaryTests_0fg4b50">
+          <text>"Monday"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0uialaf">
+          <text>"10"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1d4lvp9">
+          <text>"Shopping"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0o2d0ze">
+        <inputEntry id="UnaryTests_1a3jpr8">
+          <text>"Monday"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fa4p6e">
+          <text>"1"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0xxpg8q">
+          <text>"Sleeping"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1g0s3mc">
+        <inputEntry id="UnaryTests_0lpq27b">
+          <text>"Monday"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02ynmdv">
+          <text>"2"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0mci007">
+          <text>"Chess"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13o5v3d">
+        <inputEntry id="UnaryTests_117y4xv">
+          <text>"Monday"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jg1rye">
+          <text>"6"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0a7tfei">
+          <text>"Movie"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0iojyr8">
+        <inputEntry id="UnaryTests_0y98hsu">
+          <text>"Tuesday"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12kg9ia">
+          <text>"5"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1itebry">
+          <text>"Fishing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0bpxavd">
+        <inputEntry id="UnaryTests_0kw278u">
+          <text>"Tuesday"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1972i9v">
+          <text>"1"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ntmoue">
+          <text>"Webseries"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_03z0llo">
+        <inputEntry id="UnaryTests_0sxxg41">
+          <text>"Tuesday"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0w8hdwz">
+          <text>"2"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1m1z6et">
+          <text>"Cooking"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mrazrw">
+        <inputEntry id="UnaryTests_0ca9ddh">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06jhymk">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_090qr0y">
+          <text>"Netflix"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_1xexz6a">
+        <dc:Bounds height="80" width="180" x="150" y="80" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
