@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="participantRules" name="Participant Rules" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.4.1" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.18.0">
+  <decision id="Decision_0cgnuod" name="Participant Rules">
+    <decisionTable id="DecisionTable_0dq60er" hitPolicy="FIRST">
+      <input id="Input_1" label="Participants" camunda:inputVariable="participants">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Decision" name="decision" typeRef="string" />
+      <rule id="DecisionRule_1pe0qd3">
+        <inputEntry id="UnaryTests_15gyda0">
+          <text>"1"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0vrdd2s">
+          <text>"Go"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1rjjqju">
+        <inputEntry id="UnaryTests_1pk81y2">
+          <text>"2"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1gff1gy">
+          <text>"Go"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1tm4g5r">
+        <inputEntry id="UnaryTests_1093pd3">
+          <text>"5"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1qyx70y">
+          <text>"Stop"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0u9dcaf">
+        <inputEntry id="UnaryTests_1tq5jp3">
+          <text>"3"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1e5utu6">
+          <text>"Go"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0g0od6q">
+        <inputEntry id="UnaryTests_0k5vf9s">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_03391h5">
+          <text>"Stop"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_0cgnuod">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

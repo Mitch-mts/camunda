@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="AmountApprovalDecision" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.4.1" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.18.0">
+  <decision id="amountApprovalDecision" name="Amount Approval Decision">
+    <decisionTable id="DecisionTable_0yc2mcb" hitPolicy="FIRST">
+      <input id="Input_1" label="Amount" camunda:inputVariable="amount">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>amount</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Result" name="result" typeRef="string" />
+      <rule id="DecisionRule_04zteoc">
+        <inputEntry id="UnaryTests_005fkam">
+          <text>"100"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0vofwt7">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0jpzs0s">
+        <inputEntry id="UnaryTests_17u6tjk">
+          <text>"50"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0jwt8t9">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qiktoc">
+        <inputEntry id="UnaryTests_123v5bl">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0wn70g9">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="amountApprovalDecision">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
