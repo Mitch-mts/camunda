@@ -1,4 +1,13 @@
 com\example\mtech\ReserverSeatOnBoat.class
-com\example\mtech\WeatherReport.class
+com\example\mtech\CamundaService.class
+com\example\mtech\CamundaRequest.class
+com\example\mtech\InputProcessor.class
 com\example\mtech\FuneralDetails.class
+com\example\mtech\CamundaRequest$CamundaRequestBuilder.class
 com\example\mtech\Application.class
+com\example\mtech\CamundaServiceImpl.class
+com\example\mtech\LoggerDelegate.class
+com\example\mtech\WeatherReport.class
+com\example\mtech\worldcup\ProcessTicket.class
+com\example\mtech\worldcup\BuyTicketProcess.class
+com\example\mtech\CamundaRestController.class

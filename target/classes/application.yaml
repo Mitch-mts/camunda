@@ -31,3 +31,9 @@ eureka:
 spring:
   application:
     name: camunda-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
