@@ -10,6 +10,7 @@ public class ProcessTicket implements JavaDelegate {
     @Override
     public void execute(DelegateExecution delegateExecution) throws Exception {
         String money = (String) delegateExecution.getVariable("money");
+        String ticketNumber = (String) delegateExecution.getVariable("ticketNumber");
         double amount = Double.parseDouble(money);
         boolean approved = false;
 
@@ -18,5 +19,6 @@ public class ProcessTicket implements JavaDelegate {
         }
         delegateExecution.setVariable("approved", approved);
         delegateExecution.setVariable("amount", amount);
+        delegateExecution.setVariable("ticketNumber", "AOP".concat(ticketNumber));
     }
 }
