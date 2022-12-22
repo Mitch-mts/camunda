@@ -147,7 +147,7 @@
         <version>2.7.3</version>
       </plugin>
     </plugins>
-    <finalName>lafytte</finalName>
+    <finalName>lafayette</finalName>
   </build>
 
 </project>
